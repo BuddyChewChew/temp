@@ -175,7 +175,6 @@ def generate_pluto_m3u(regions=['us', 'ca', 'gb', 'au', 'mx', 'all'], sort='name
 def generate_plex_m3u(regions=['us', 'ca', 'gb', 'au', 'all'], sort='name'):
     """Generates M3U playlists for Plex."""
     PLEX_URL = 'https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/Plex/.channels.json.gz'
-    CHANNELS_JSON_URL = 'https://raw.githubusercontent.com/Mikoshi-nyudo/plex-channels-list/refs/heads/main/plex/channels.json' # For genre mapping
     STREAM_URL_TEMPLATE = 'https://jmp2.uk/plex-{id}.m3u8'
     EPG_URL_TEMPLATE = 'https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/{region}.xml.gz'
     PLEX_HEADERS = {'User-Agent': USER_AGENT}
